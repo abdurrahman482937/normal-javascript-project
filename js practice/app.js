@@ -71,10 +71,70 @@ const result9 = sum(5, 2);
 const func1 = (name) => {
   return name;
 };
-const result1 = func1("abdurrahman")
-const result2 = func1("raisa")
-console.log(`i'm ${result1} and my girlfriend is ${result2}`)
+const result1 = func1("abdurrahman");
+const result2 = func1("raisa");
+console.log(`i'm ${result1} and my girlfriend is ${result2}`);
 
-// array! 
-let arr = [1, 2, 3, 4, 5]
-console.log(arr)
+// array!
+let arr = [1, 2, 3, 4, 5];
+// console.log(arr.length)
+// console.log(arr.toString())
+// console.log(arr.indexOf(4))
+// console.log(arr)
+// console.log(arr.unshift())
+// console.log(arr.reverse().concat(arr))
+
+// for of loop with array!
+for (const element of arr) {
+  // console.log(element)
+}
+
+// map!
+const arrMap = arr.map((e) => {
+  return e ** 2;
+});
+// console.log(arrMap);
+
+// filter!
+const filterArr = arrMap.filter((e) => e > 10);
+// console.log(filterArr);
+
+// just try! filter
+/****
+let people = [
+  { name: "raisa", age: 16 },
+  { name: "abdurrahman", age: 18 },
+  { name: "soliman", age: 19 },
+  { name: "shoaib", age: 22 },
+];
+
+const myfilter = people.filter((e) => e.age >= 18);
+console.log(myfilter);
+
+let word = ["apple", "banana", "mango", "orange"];
+console.log(word.filter((e) => e.startsWith('a' || 'b' || 'c')))
+****/
+
+// 5 task with filter!
+let numbers = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9];
+let uniqueNumbers = numbers.filter((e, i, a) => {
+  return a.indexOf(e) === a.lastIndexOf(e);
+});
+// let uniqueNumbers = new Set(numbers)
+console.log(uniqueNumbers);
+
+let emails = [
+  "john@gmail.com",
+  "hello@",
+  "admin@server",
+  "user@yahoo.com",
+  "noemail.com",
+];
+let validEmails = emails.filter((e) => e === "@");
+console.log(validEmails);
+
+// array reduce!
+const reduceFunc = (a, b) => {
+  return a + b;
+};
+console.log(arr.reduce(reduceFunc));
