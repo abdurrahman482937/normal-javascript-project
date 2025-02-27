@@ -75,4 +75,6 @@ const result1 = func1("abdurrahman")
 const result2 = func1("raisa")
 console.log(`i'm ${result1} and my girlfriend is ${result2}`)
 
-
+// array! 
+let arr = [1, 2, 3, 4, 5]
+console.log(arr)

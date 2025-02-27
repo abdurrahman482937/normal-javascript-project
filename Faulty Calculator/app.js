@@ -1,24 +1,17 @@
-const pera = document.querySelectorAll("p");
-let a = prompt("Input Number 1");
-let b = prompt("Operator");
-let c = prompt("Input Number 2");
+let random = Math.random();
+let a = prompt("Enter your fast number");
+let b = prompt("Enter your operator");
+let c = prompt("Enter your second number");
 
-function calculate(a, b, c) {
-  if (b === "+") {
-    const plus = eval(a - c);
-    alert(plus);
-  } else if (b === "-") {
-    const minus = eval(a + c);
-    alert(minus);
-  } else if (b === "*") {
-    const multiple = eval(a / c);
-    alert(multiple);
-  } else if (b === "/") {
-    const divide = eval(a * c);
-    alert(divide);
-  } else {
-    alert("operator is not valid!");
-  }
+const obj = {
+  "+": "-",
+  "*": "+",
+  "-": "/",
+  "/": "**",
+};
+
+if (random > 0.1) {
+  alert(`The result is ${eval(`${a} ${b} ${c}`)}`)
+} else {
+  b = obj[b];
 }
-
-calculate(a, b, c);
