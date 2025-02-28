@@ -141,7 +141,17 @@ console.log(arr.reduce(reduceFunc));
 
 // fetch api with async && await!
 async function fetchFunc() {
-  let a = await fetch("https://jsonplaceholder.typicode.com/todos");
+  let a = await fetch("https://jsonplaceholder.typicode.com/todos", {
+    method: "POST",
+    body: JSON.stringify({
+      title: "foo",
+      body: "bar",
+      userId: 1,
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+    },
+  });
   let data = await a.json();
   console.log(data);
 }
