@@ -138,3 +138,11 @@ const reduceFunc = (a, b) => {
   return a + b;
 };
 console.log(arr.reduce(reduceFunc));
+
+// fetch api with async && await!
+async function fetchFunc() {
+  let a = await fetch("https://jsonplaceholder.typicode.com/todos");
+  let data = await a.json();
+  console.log(data);
+}
+fetchFunc();
