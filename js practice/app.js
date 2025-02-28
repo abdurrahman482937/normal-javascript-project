@@ -156,3 +156,27 @@ async function fetchFunc() {
   console.log(data);
 }
 fetchFunc();
+
+// system hacking... 😁
+async function hacking() {
+  let a = setTimeout(() => {
+    console.log("Initializing Hacking", dot());
+  }, 1000);
+
+  let b = setTimeout(() => {
+    console.log("Reading Your Files...");
+  }, 2000);
+
+  let c = setTimeout(() => {
+    console.log("Password File Detected...!");
+  }, 3000);
+
+  let d = setTimeout(() => {
+    console.log("Sending All Password and Personal file to Server...");
+  }, 3000);
+
+  let e = setTimeout(() => {
+    console.log("Cleaning up...");
+  }, 4000);
+}
+hacking();
