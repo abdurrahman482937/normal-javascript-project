@@ -37,3 +37,4 @@ console.log(string.toLocaleUpperCase('tr')); // check string !
 /**
 
 **/
+
