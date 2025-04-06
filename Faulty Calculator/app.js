@@ -15,3 +15,4 @@ if (random > 0.1) {
 } else {
   b = obj[b];
 }
+
