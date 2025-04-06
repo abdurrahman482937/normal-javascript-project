@@ -180,5 +180,3 @@ async function hacking() {
   }, 4000);
 }
 hacking();
-
-

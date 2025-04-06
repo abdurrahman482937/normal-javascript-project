@@ -15,4 +15,3 @@ function factorial2(num) {
   return result;
 }
 console.log(factorial2(6));
-

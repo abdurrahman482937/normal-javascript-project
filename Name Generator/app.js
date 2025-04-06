@@ -28,5 +28,4 @@ if (random < 0.33) {
   c = "hub";
 }
 
-console.log(a + " " + b + " " + c)
-
+console.log(a + " " + b + " " + c);
