@@ -11,8 +11,7 @@ const obj = {
 };
 
 if (random > 0.1) {
-  alert(`The result is ${eval(`${a} ${b} ${c}`)}`)
+  alert(`The result is ${eval(`${a} ${b} ${c}`)}`);
 } else {
   b = obj[b];
 }
-
